@@ -1,28 +1,15 @@
-const loadCountries = () => {
-    fetch('https://restcountries.com/v3.1/all')
-        .then(res => res.json())
-        .then(data => getCountries(data))
-}
+// const loadCountries = () => {
+//     fetch('https://restcountries.com/v3.1/all')
+//         .then(res => res.json())
+//         .then(data => getCountries(data))
+// }
 
-const getCountries = (countries) => {
-    countries.map(country => showCountry(country))
-}
-const showCountry = (country) => {
-    const { name } = country;
-    const container = document.getElementById('container');
+// const getCountries = (countries) => {
+//     const singleCountry = countries.map(country => )
+// }
+// const showCountry = (country) =>
 
-    container.innerHTML =
-        `
-    <div>
-    <h2>name:${name.common}</h2>
-    </div>
-    `
-}
-
-loadCountries();
-
-
-
+//     loadCountries();
 
 
 
